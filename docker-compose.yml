@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: 'postgres:latest'
+    environment:
+      POSTGRES_PASSWORD: ifms
+      POSTGRES_USER: ifms
+      POSTGRES_DB: plano_de_saude
+    ports:
+      - '5432:5432'
